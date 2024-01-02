@@ -1,9 +1,13 @@
 import { NgModule } from '@angular/core';
 
 import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
+import { FieldsetModule } from 'primeng/fieldset';
+import { InputTextModule } from 'primeng/inputtext';
 import { MenuModule } from 'primeng/menu';
 import { MenubarModule } from 'primeng/menubar';
-import { InputTextModule } from 'primeng/inputtext';
+import { PanelModule } from 'primeng/panel'
+
 
 
 
@@ -13,7 +17,14 @@ import { InputTextModule } from 'primeng/inputtext';
 @NgModule({
 
   exports: [
-    ButtonModule,MenuModule,MenubarModule,InputTextModule
+    ButtonModule,
+    CardModule,
+    FieldsetModule,
+    InputTextModule,
+    MenuModule,
+    MenubarModule,
+    PanelModule
+
   ]
 
 })

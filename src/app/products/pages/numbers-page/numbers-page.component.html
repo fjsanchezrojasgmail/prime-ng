@@ -1,1 +1,96 @@
-<p>numbers-page works!</p>
+<p-panel class="p-2">
+  <p-header>
+    <h1>Pipes</h1>
+  </p-header>
+   <h2>Pipes Numéricos</h2>
+   <p>
+      Pipes incluidos en Angular - Usualmente en el Common Module
+   </p>
+
+   <div class="grid mt-2">
+
+      <div class="col-12 md:col-4">
+
+        <p-card header="uppercase">
+
+          pipe1
+
+        </p-card>
+
+      </div>
+      <div class="col-12 md:col-4">
+
+        <p-card header="lowercase">
+
+          pipe2
+
+        </p-card>
+
+      </div>
+      <div class="col-12 md:col-4">
+
+        <p-card header="titlecase">
+
+          pipe3
+
+        </p-card>
+
+      </div>
+
+      <div class="col-12 md:col-6">
+
+        <p-card header="datepipe">
+
+          <ul>
+            <li>fecha</li>
+            <li>fecha | date</li>
+            <li>fecha | date: 'short'</li>
+            <li>fecha | date: 'logg'</li>
+            <li>fecha | date: 'MMMM'</li>
+            <li>fecha | date: 'MMMM dd, yyyy'</li>
+          </ul>
+
+          <hr>
+
+          <ol>
+
+            <li>fecha | date: 'long': 'GMT-6'</li>
+            <li>fecha | date: 'long': 'GMT-4'</li>
+            <li>fecha | date: 'long':'':'es-419'</li>
+            <li>fecha | date: 'long':'':'en-US'</li>
+
+          </ol>
+
+        </p-card>
+
+      </div>
+
+      <div class="col-12 md:col-6">
+
+        <p-card header="datepipe">
+
+          <ul>
+            <li>number</li>
+          </ul>
+
+          <hr>
+
+          <ol>
+
+            <li>number</li>
+
+          </ol>
+
+        </p-card>
+
+      </div>
+
+   </div>
+
+  <p-footer>
+
+    <h2>Footer: {{ 'Example' | translate:'esp' }}</h2>
+
+  </p-footer>
+</p-panel>
+
